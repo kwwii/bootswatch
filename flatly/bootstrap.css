@@ -6321,15 +6321,27 @@ button.close {
 }
 /* Begin Vendor Additions*/
 .masthead {
-  margin: 60px 0px 30px;
+  margin: 60px 0px 40px;
+  text-align: center;
 }
 .masthead h1 {
   letter-spacing: -2px !important;
   color: #7AC142 !important;
 }
+.masthead p {
+  margin: 20px 40px 0px;
+}
+#masthead-row {
+  background-color: #ecf0f1;
+  margin-bottom: 30px;
+}
 .screenshot-article {
   margin-bottom: 40px;
   margin-top: 40px;
+}
+.screenshot-article p {
+  line-height: 1.3;
+  margin-top: 20px;
 }
 .screenshot {
   margin-top: 10px;
@@ -6347,8 +6359,13 @@ footer {
   font-family: "Doppio One";
   font-size: 24px;
 }
-h1 {
+h1,
+h2,
+h3 {
   font-family: "Doppio One";
+}
+h3 .glyphicon {
+  font-size: 80%;
 }
 /* End Vendor Additions */
 .navbar {
