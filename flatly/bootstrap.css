@@ -898,7 +898,7 @@ body {
   font-size: 15px;
   line-height: 1.42857143;
   color: #173f4f;
-  background-color: #ffffff;
+  background-color: #f5f5f5;
 }
 input,
 button,
@@ -943,7 +943,7 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.42857143;
-  background-color: #ffffff;
+  background-color: #f5f5f5;
   border: 1px solid #ecf0f1;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -2090,7 +2090,7 @@ th {
   border-top: 2px solid #ecf0f1;
 }
 .table .table {
-  background-color: #ffffff;
+  background-color: #f5f5f5;
 }
 .table-condensed > thead > tr > th,
 .table-condensed > tbody > tr > th,
@@ -3723,7 +3723,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
   color: #173f4f;
-  background-color: #ffffff;
+  background-color: #f5f5f5;
   border: 1px solid #ecf0f1;
   border-bottom-color: transparent;
   cursor: default;
@@ -3769,7 +3769,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs.nav-justified > .active > a,
   .nav-tabs.nav-justified > .active > a:hover,
   .nav-tabs.nav-justified > .active > a:focus {
-    border-bottom-color: #ffffff;
+    border-bottom-color: #f5f5f5;
   }
 }
 .nav-pills > li {
@@ -3837,7 +3837,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs-justified > .active > a,
   .nav-tabs-justified > .active > a:hover,
   .nav-tabs-justified > .active > a:focus {
-    border-bottom-color: #ffffff;
+    border-bottom-color: #f5f5f5;
   }
 }
 .tab-content > .tab-pane {
@@ -4673,7 +4673,7 @@ a.list-group-item.active > .badge,
   padding: 4px;
   margin-bottom: 21px;
   line-height: 1.42857143;
-  background-color: #ffffff;
+  background-color: #f5f5f5;
   border: 1px solid #ecf0f1;
   border-radius: 4px;
   -webkit-transition: border 0.2s ease-in-out;
@@ -6320,28 +6320,67 @@ button.close {
   }
 }
 /* Begin Vendor Additions*/
+.navbar-fixed-top {
+  border-bottom: 1px solid #001f2c !important;
+}
+.navbar-default .navbar-toggle {
+  border-color: #35b9ab;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #35b9ab;
+}
 .masthead {
-  margin: 60px 0px 40px;
   text-align: center;
 }
 .masthead h1 {
-  letter-spacing: -2px !important;
-  color: #7AC142 !important;
+  letter-spacing: -4px !important;
+  margin-top: 15px;
+  color: white !important;
+  text-shadow: #173f4f 1px 1px 3px;
 }
 .masthead p {
-  margin: 20px 40px 0px;
+  margin: 15px 80px 25px;
+  color: white;
+  line-height: 1.2;
+  text-shadow: #173f4f 1px 1px 3px;
+}
+.main-header {
+  text-align: left;
+}
+.main-header h1 {
+  letter-spacing: -4px !important;
+  margin-top: 0px;
+  color: white !important;
+  text-shadow: #173f4f 1px 1px 3px;
+}
+.main-header p {
+  color: white;
+  text-shadow: #173f4f 1px 1px 3px;
+}
+.lead {
+  margin-bottom: 0px;
 }
 #masthead-row {
-  background-color: #ecf0f1;
-  margin-bottom: 30px;
+  background-color: #35b9ab;
+  border-bottom: 1px solid #1f877c;
 }
-.screenshot-article {
-  margin-bottom: 40px;
-  margin-top: 40px;
+#content-row {
+  padding: 20px 0px 60px;
+  border-top: 1px solid #fff;
+  -webkit-box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.25);
 }
-.screenshot-article p {
-  line-height: 1.3;
+.main-article {
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+.main-article > h3 {
+  margin-bottom: 20px;
+}
+.main-article p {
+  line-height: 1.2;
   margin-top: 20px;
+  margin-right: 40px;
 }
 .screenshot {
   margin-top: 10px;
@@ -6351,9 +6390,16 @@ button.close {
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
 }
+.main-article h2 {
+  margin-bottom: 40px;
+}
+.docs h3 {
+  margin-top: 40px;
+}
 footer {
-  margin: 40px 0px 0px !important;
-  background-color: #ecf0f1;
+  margin: 0px !important;
+  padding: 20px 0px 0px !important;
+  background-color: #173f4f !important;
 }
 .navbar-brand {
   font-family: "Doppio One";
@@ -6366,6 +6412,37 @@ h3 {
 }
 h3 .glyphicon {
   font-size: 80%;
+}
+hr {
+  border-color: #b4bcc2;
+}
+#content-row a {
+  color: #0085C7;
+}
+#content-row .label a {
+  color: #ffffff;
+}
+.panel-default {
+  border: none;
+  background-color: white;
+}
+.panel-default dd {
+  color: #666;
+  margin: 0px 20px 20px;
+}
+.label-success a {
+  color: white;
+}
+.panel-default > .panel-heading {
+  border-color: #95a5a6;
+  background-color: #95a5a6;
+  color: white;
+}
+pre {
+  background-color: #fff;
+}
+.line {
+  border-color: #b4bcc2;
 }
 /* End Vendor Additions */
 .navbar {

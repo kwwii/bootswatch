@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>YaST, the most comprehensive installation and configuration tool for Linux</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./flatly/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="./bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/bootswatch.min.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="./bower_components/html5shiv/dist/html5shiv.js"></script>
+      <script src="./bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="./" class="navbar-brand">YaST</a> 
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="opensuse.org" target="_blank">Built by OBS</a></li>
+          </ul>
+          <ul class="nav navbar-nav" id="main-menu">
+            <li>
+              <a href="./features.html">Modules</a>
+            </li>
+            <li>
+              <a href="./contributing.html">Contributing</a>
+            </li>
+            <li>
+              <a href="#">Documentation</a>
+            </li>
+            <li>
+              <a href="#">Guidelines</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="masthead-row">
+      <div class="container">
+        <div class="page-header">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="main-header">
+                <h1>Modules</h1>
+                <p class="lead">The functionality of YaST is extensible through a variety of modules.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="content-row">
+      <div class="container">          
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="main-article">
+              <h2>Available Modules</h2>
+            </div>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+              <h4 class="panel-title"><strong>Software</strong></h3>
+              </div>
+              <div class="panel-body">
+                <dl>
+                  <dt>
+                    <h4>
+                      <span class="label label-success">
+                        <a href="http://github.com/yast/yast-add-on">yast-add-on</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Allows to add/remove add-ons for base system.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success">
+                        <a href="http://github.com/yast/yast-add-on-creator">yast-add-on-creator</a>
+                      </span>
+                    </h4>
+                    </dt>
+                  <dd>This module can create custom add-on products from provided RPM packages.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success">
+                        <a href="http://github.com/yast/yast-apparmor">yast-apparmor</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Apparmor profile management.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success">
+                        <a href="http://github.com/yast/yast-auth-client ">yast-auth-client </a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Configuration of various authentication methods for system like Kerberos, LDAP or SSSD.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success">
+                        <a href="http://github.com/yast/yast-auth-server">yast-auth-server</a>
+                      </span>
+                    </h4>
+                    </dt>
+                  <dd>Configuration of server providing various authentication methods like Kerberos, LDAP or SSSD.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success">
+                        <a href="http://github.com/yast/yast-bootloader">yast-bootloader</a>
+                      </span>
+                    </h4>
+                    </dt>
+                  <dd>Bootloader installation and configuration.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success">
+                        <a href="http://github.com/yast/yast-ca-management">yast-ca-management</a>
+                      </span>
+                    </h4>
+                    </dt>
+                  <dd>Certificate authority management.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success">
+                        <a href="http://github.com/yast/yast-cio ">yast-cio </a>
+                      </span>
+                    </h4>
+
+                    </dt>
+                  <dd>Management of blacklisting channels for Input/Output for s390x.</dd>
+                </dl>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+              <h4 class="panel-title"><strong>Hardware</strong></h4>
+              </div>
+              <div class="panel-body">
+                <dl>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-cluster">yast-cluster</a>
+                      </span>
+                    </h4></dt>
+                  <dd>Management of settings for high availability clusters.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-country">yast-country</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Configuration of localization specific settings like language, keyboard layout, timezone, etc.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-crowbar">yast-crowbar</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Configuration of Crowbar, the orchestration tool used by SUSE Cloud.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-dbus-server ">yast-dbus-server</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>YaST DBus service providing DBus access to YaST components.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-dhcp-server">yast-dhcp-server</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Configuration of DHCP server, including LDAP-related settings.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-dns-server">yast-dns-server</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Comprehensive configuration of BIND DNS server.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-docker">yast-docker</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Management of Docker daemon, images, and containers.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-drbd">yast-drbd</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Configuration of Distributed Replicated Block Devices, a distributed storage system frequently used on high availability (HA) clusters.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-fcoe-client">yast-fcoe-client</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Settings to connect to a Fibre Channel over Ethernet (FCoE) network.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-firewall">yast-firewall</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Management of SUSE Firewall.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-firstboot ">yast-firstboot </a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Allows system administrators to setup a wizard to execute on the first run of a system. Useful for image-based deployments.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-fonts">yast-fonts</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Management of fontconfig settings to control font appearance, including font rendering algorithm and font family preference.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-ftp-server">yast-ftp-server</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Configuration of Pure-FTPd and vsftpd.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-geo-cluster">yast-geo-cluster</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Management of Geo Clustering for high availability.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-http-server">yast-http-server</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Comprehensive configuration of Apache2.</dd>
+                </dl>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+              <h4 class="panel-title"><strong>System</strong></h4>
+              </div>
+              <div class="panel-body">
+                <dl>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-inetd">yast-inetd</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Configuration of inetd and xinetd daemons.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-instserver">yast-instserver</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Configures installation server (NFS, HTTP or FTP) providing installation repositories.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-iplb">yast-iplb</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Configures IP load balancing.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-iscsi-client">yast-iscsi-client</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Configures iSCSI client.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-iscsi-lio-server">yast-iscsi-lio-server</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Configures iSCSI LIO target.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-isns ">yast-isns </a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Configures iSNS.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-kdump">yast-kdump</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Configures kdump (kernel dump) tool.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-lxc ">yast-lxc </a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Configures LXC Linux containers.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-mail">yast-mail</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Mail configuration.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-multipath">yast-multipath</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Configures multipath devices.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-network">yast-network</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Configures network devices.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-nfs-client">yast-nfs-client</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Configures mounts NFS directories from NFS servers.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-nfs-server ">yast-nfs-server </a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Exports directories over NFS network protocol.</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+              <h4 class="panel-title"><strong>Network</strong></h4>
+              </div>
+              <div class="panel-body">
+                <dl>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-nis-client">yast-nis-client</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Client side of network information services
+                    (<a href="http://en.wikipedia.org/wiki/Network_Information_Service">NIS, YP</a>),
+                    such as user and group information, and hostnames.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-nis-server">yast-nis-server</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Server configuration for network information services
+                    (<a href="http://en.wikipedia.org/wiki/Network_Information_Service">NIS, YP</a>).</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-ntp-client">yast-ntp-client</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Time synchronization over network
+                    (<a href="http://en.wikipedia.org/wiki/Network_Time_Protocol">NTP</a>).</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-online-update">yast-online-update</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Updates your SUSE with the latest patches from online repositories.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-opensuse-mirror">yast-opensuse-mirror</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Configures mirroring of openSUSE repositories locally.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-pam">yast-pam</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>User authentication plug-ins configuration
+                    (<a href="http://en.wikipedia.org/wiki/Linux_PAM">PAM</a>).</dd>
+                </dl>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+              <h4 class="panel-title"><strong>Security</strong></h4>
+              </div>
+              <div class="panel-body">
+                <dl>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-pos-installation ">yast-pos-installation </a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Takes care of
+                    <a href="https://www.suse.com/products/linuxpointofservice/">SUSE POS</a>
+                    installation and upgrade.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-printer">yast-printer</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Local and remote printing configuration.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-product-creator">yast-product-creator</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Create your own product based on SUSE with this tool.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-proxy">yast-proxy</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Configures your system to use HTTP and FTP proxy.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-rdp">yast-rdp</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Configure your graphical interface to allow remote connection via
+                    <a href="http://en.wikipedia.org/wiki/Remote_Desktop_Protocol">RDP</a>.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-rear ">yast-rear </a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Configure backup using Relax and Recover
+                    (<a href="http://relax-and-recover.org/">ReaR</a>).</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-registration">yast-registration</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Allows registering the system to the <a href="https://scc.suse.com">SUSE Customer Center (SCC)</a>
+                   or Subscription Management Tool (SMT) server to receive security updates,
+                   extra software and customer support (SUSE Linux Enterprise only).</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-reipl">yast-reipl</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd><a href="http://en.wikipedia.org/wiki/IBM_System_z">IBM zSeries</a>
+                  specific configuration (loading IPL (initial program loader) from a running system.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-s390">yast-s390</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd><a href="http://en.wikipedia.org/wiki/IBM_System_z">IBM zSeries</a>
+                  specific configuration (DASD disks, ZFCP disks, IUCV terminal, ...).</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-samba-client">yast-samba-client</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Client configuration for using file and printing services over SMB/CIFS
+                    networking protocol provided by Windows or
+                    <a href="http://en.wikipedia.org/wiki/Samba_(software)">Samba server</a>.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-samba-server">yast-samba-server</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Server side of a file and printing services using
+                    <a href="http://en.wikipedia.org/wiki/Samba_(software)">Samba</a>.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-scanner ">yast-scanner </a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Configures local (SCSI, USB) or network scanners.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-security">yast-security</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Security settings (password and login settings, kernel options...)</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-services-manager">yast-services-manager</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Configures system services started at boot (systemd services).</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-slp-server ">yast-slp-server </a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Configures Service Location Protocol server (<a href="http://www.openslp.org/">OpenSLP</a>).</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-snapper">yast-snapper</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Configures <a href="http://snapper.io/">snapper</a> (the Btrfs snapshotting tool), can browse snapshots.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-sound">yast-sound</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Configures sound cards (usually needed just in some special cases,
+                  autoconfiguration should work out-of-box).</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-squid">yast-squid</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Configures Squid proxy service.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-storage ">yast-storage </a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Disk and partition management.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-sudo">yast-sudo</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Configures the sudo tool (to execute commands as another user or as root).</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-sysconfig">yast-sysconfig</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Editor for /etc/sysconfig files.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-tftp-server">yast-tftp-server</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Configures TFTP server (used for booting over network).</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-tune">yast-tune</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Hardware detection and expert system tuning.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-users">yast-users</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Tool for managing system users and groups.</dd>
+                  <dt>
+                    <h4>
+                      <span class="label label-success"><a href="http://github.com/yast/yast-vm">yast-vm</a>
+                      </span>
+                    </h4>
+                  </dt>
+                  <dd>Installs tools for using XEN or KVM virtualization.</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <ul class="list-unstyled">
+              <li class="pull-right"><a href="#top">Back to top</a></li>
+              <li><a href="#" target="_blank">Built by OBS</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">License</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../assets/js/bootswatch.js"></script>
+  </body>
+</html>
+
